@@ -4,6 +4,10 @@
     The installer has an option to install docker, that is fine.
     Otherwise, you can follow step 2.
 
+    Note that you can also install the Desktop version, but it 
+    doesn't have the option to install Docker, so you will have 
+    to manually install Docker
+
 2. Install Docker
     https://docs.docker.com/engine/install/ubuntu/
 

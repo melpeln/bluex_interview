@@ -1,5 +1,5 @@
 import { test, expect, defineConfig } from '@playwright/test'
-import { slowLocator } from './slowlocator'
+import { slowLocator } from './support/slowlocator'
 import CompanyInfo from './pom/components/company.component';
 import Bottom from './pom/components/bottom.component';
 import BusinessInfo from './pom/components/business.component';
@@ -52,7 +52,7 @@ test("Complete signup", async ({ page }) => {
   await bankInfo.enter_AccountName('Test123456789 Inc.')
   await bankInfo.enter_AccountNumber('1234567890')
   await bankInfo.enter_routingNumber('987654321')
-  await bankInfo.upload_InvoiceFile('tests/sample.pdf')
+  await bankInfo.upload_InvoiceFile('tests/bin/sample.pdf')
   await bankInfo.enter_Email('vendortest@example.com')
 
   await bottom.click_Next()

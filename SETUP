@@ -1,4 +1,8 @@
 Install Ubuntu
-Install docker
+Install Docker
 clone repo
+    git clone https://github.com/melpeln/bluex_interview.git
+go into repo
 run commands
+    sudo docker build -t playwright-docker .
+    sudo docker run -it playwright-docker:latest npm run test

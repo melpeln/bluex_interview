@@ -1,9 +1,11 @@
 1. Install Ubuntu
     https://ubuntu.com/download/server (22.04.2 LTS)
 
+    RECOMMENDED:
     The installer has an option to install docker, that is fine.
     Otherwise, you can follow step 2.
 
+    Alternative:
     Note that you can also install the Desktop version, but it 
     doesn't have the option to install Docker, so you will have 
     to manually install Docker

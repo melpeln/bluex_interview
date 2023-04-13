@@ -1,10 +1,11 @@
-import { test } from '@playwright/test'
+import { test, expect, defineConfig } from '@playwright/test'
 import { slowLocator } from './support/slowlocator'
 import CompanyInfo from './pom/components/company.component';
 import Bottom from './pom/components/bottom.component';
 import BusinessInfo from './pom/components/business.component';
 import BankInfo from './pom/components/bank_account.component';
 import Loading from './pom/components/loading.component';
+import { isBooleanObject } from 'util/types';
 
 test("Complete signup", async ({ page }) => {
 
@@ -20,8 +21,8 @@ test("Complete signup", async ({ page }) => {
   const companyInfo = new CompanyInfo(page);
   const businessInfo = new BusinessInfo(page);
   const bankInfo = new BankInfo(page);
-
-  // const loadingAnimation = new Loading(page);
+  
+  const loadingAnimation = new Loading(page);
   const bottom = new Bottom(page);
 
   await companyInfo.waitForAllElementsToLoad()

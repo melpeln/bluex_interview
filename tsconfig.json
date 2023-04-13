@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
-    "target": "ES2021",
+    "module": "commonjs"
   },
-  "include": ["tests"],
+  "include": ["tests"]
 }

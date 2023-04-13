@@ -1,5 +1,4 @@
 import { Page } from "@playwright/test"
-import Info from "./info.component";
 
 export default class Loading
 {
